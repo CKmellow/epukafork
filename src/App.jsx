@@ -4,11 +4,11 @@ import Navbar from "./Components/Navbar/Navbar";
 import Background from "./Components/Background/Background";
 import Hero from "./Components/Hero/Hero";
 import WeatherForecast from "./Components/WeatherForecast/WeatherForecast";
-import Login from "./Components/SignUp/Login";
+// import Login from "./Components/SignUp/Login";
 import StreamSociety from "./Components/Stream-society/StreamSociety";
 import LearningResources from "./Components/Learning resources/LearningResources";
-import SignUpForm from "./Components/SignUp/SignUpForm";
-import Profile from './Components/SignUp/Profile';
+// import SignUpForm from "./Components/SignUp/SignUpForm";
+// import Profile from './Components/SignUp/Profile';
 
 import {ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -52,9 +52,9 @@ const App = () => {
             }
           />
           <Route path="/weather" element={<WeatherForecast />} />
-          <Route path="/signup" element={<SignUpForm />} />
+          {/* <Route path="/signup" element={<SignUpForm />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/profile" element={<Profile />} /> */}
           <Route path="/StreamSociety" element={<StreamSociety />} />
           <Route path="/LearningResources" element={<LearningResources/>} />
         </Routes>
