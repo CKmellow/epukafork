@@ -1,0 +1,69 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 120px;
+    padding: 10px 20px;
+    background: transparent; /* No background for the navbar itself */
+    z-index: 1; /* Ensure the navbar is above the overlay */
+    position: relative; /* So it stays on top */
+    color: white;
+  }
+  
+  .nav-logo {
+    font-family: 'Outfit', sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .nav-menu {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    gap: 90px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-menu li {
+    cursor: pointer;
+  }
+  
+  .nav-menu li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .nav-menu li a:hover {
+    color: rgb(61, 217, 252);
+  }
+  
+  .nav-partner {
+    border-radius: 50px;
+    padding: 10px 38px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    background: rgb(45, 169, 197);
+    color: #262626;
+  }
+  
+  .nav-partner:hover {
+    background: #000000;
+    color: #262626;
+  }
+  
+  /* New overlay styles */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+    background: rgba(0, 0, 0, 0.7); /* Black with lowered opacity */
+    z-index: 0; /* Ensure the overlay is below the navbar */
+  }
+  
